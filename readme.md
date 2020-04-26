@@ -1,11 +1,19 @@
 # micro service avec Spring Cloud
 
+
+
+Apres git clone de ce projet .  Il faudra initialiser le repertoire git local **my-config-service**
+
+
+
 Dans ce projet nous gerons deux microservices : GestionDesEntreprise cotés en bourse et gestionDesActions de ces entreprises.
 
-Seule le microserice societe-service est creer.
 
+
+**Ici Seule le microserice societe-service est creer.**
 
 ## diagramme de classe
+
 ![xxxx](doc/images/introduction/diagram.jpg)
 
 ## Architecture microservice societe service
@@ -55,27 +63,27 @@ Configuration societe-service
 
  ### modififcation du fichier de configuration du microservice sur le repo.
  Il faut rafraichir le micro service pour lui notifier de relire la configuration nouvelle modifier en lui envoyant un request **post**
-   
+
 ![xxxx](doc/images/service_bourse/modificationFichierGitSocieteService.jpg)
-  
+
 ![xxxx](doc/images/service_bourse/actuator_refresh.jpg)
-  
+
 ![xxxx](doc/images/service_bourse/refreshActuator.jpg)
 
 
 ## Gateway Zuul.
 ![xxxx](doc/images/service_bourse/refreshActuator.jpg)
 
- 
+
  ## Eureka server ( annuaire d'enregistrement des micro serivces)
  ![xxxx](doc/images/eureka_Service/eurekaservice.jpg)
 
 
 
  
- 
+
  ## Links
- 
+
  ### proxy Zuul service
 [http://localhost:9999/societe-service/societes](http://localhost:9999/societe-service/societes)
  [http://localhost:9999/societe-service/message](http://localhost:9999/societe-service/message)
@@ -87,8 +95,8 @@ http://localhost:8761/
  [config societe-service: http://localhost:8888/societe-service/master](http://localhost:8888/societe-service/master)  
  [config eureka-service: http://localhost:8888/eureka-service/master](http://localhost:8888/eureka-service/master)  
  [config global services: http://localhost:8888/application/master](http://localhost:8888/application/master)  
- 
- 
+
+
  #### microService Societe
  [http://localhost:80/societes](http://localhost:80/societes)
  [http://localhost:80/actuator/refresh](http://localhost:80/actuator/refresh)
